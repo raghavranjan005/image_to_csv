@@ -24,10 +24,10 @@ for i in range(0,len(p),count+1):
         
     
     b.append(t)
-    Count1=Count1+x
+
 print(b)
 Sum=0
-for i in range(len(b)):
+for i in range(1,len(b)):
     for j in range(len(b[i])):
         Sum=Sum+int(b[i][1])
         break

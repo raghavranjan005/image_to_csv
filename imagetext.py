@@ -35,37 +35,16 @@ def graphtextdetextor(image_path):
 
 
 
-def findSum(str1): 
-  
-    # A temporary str1ing 
-    temp = "0" 
-  
-    # holds sum of all numbers  
-    # present in the str1ing 
-    Sum = 0
-  
-    # read each character in input string 
-    for ch in str1: 
-  
-        # if current character is a digit 
-        if (ch.isdigit()): 
-            temp += ch 
-  
-        # if current character is an alphabet 
-        else: 
-              
-            # increment Sum by number found  
-            # earlier(if any) 
-            Sum += int(temp) 
-  
-            # reset temporary str1ing to empty 
-            temp = "0"
-          
-    # atoi(temp.c_str1()) takes care  
-    # of trailing numbers 
-    return Sum + int(temp) 
+ 
 image_path='Capture1.PNG'
 d=graphtextdetextor(image_path) 
 print(d[1]) 
-#print(findSum(d[1]) )
+
+
+    
+    
+        
+            
+        
+
     
