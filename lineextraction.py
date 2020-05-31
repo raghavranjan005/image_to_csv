@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-img=cv2.imread('col2.jpg',0)
+img=cv2.imread('col2.PNG',0)
 
     # Thresholding the image
 (thresh, img_bin) = cv2.threshold(img, 254, 255,0)
@@ -36,5 +36,7 @@ cv2.imwrite("horizontal_lines.jpg",horizontal_lines_img)
 plt.imshow(horizontal_lines_img,cmap="gray")
 plt.show()
 plt.imshow(verticle_lines_img,cmap="gray")
+plt.show()
+plt.imshow(img,cmap="gray")
 plt.show()
 
