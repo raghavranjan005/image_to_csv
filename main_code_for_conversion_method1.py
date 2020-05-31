@@ -36,7 +36,7 @@ def graphtextdetextor(image_path):
 
 
  
-image_path='Capture1.PNG'
+image_path='final.jpeg'
 d=graphtextdetextor(image_path) 
 print(d[1]) 
 
@@ -69,6 +69,7 @@ for i in range(0,len(p),count+1):
     b.append(t)
 
 #print(b)
+
 '''
 Sum=0
 for i in range(1,len(b)):
@@ -77,9 +78,11 @@ for i in range(1,len(b)):
         break
 print(Sum)
 '''
+
 fg=b[0]
 #print(fg)
 b.__delitem__(0)
+
 # Python program to demonstrate 
 # writing to CSV 
 
@@ -107,7 +110,7 @@ with open(filename, "w") as csvfile:
 
 
     
-    
+  
         
             
         

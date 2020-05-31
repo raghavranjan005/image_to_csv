@@ -36,9 +36,15 @@ def graphtextdetextor(image_path):
 
 
  
-image_path='Capture1.PNG'
+image_path='final.jpeg'
 d=graphtextdetextor(image_path) 
 print(d[1]) 
+
+s=d[1].split()
+w=[]
+for i in range(len(s)):
+    w.append(s[i])
+print(w)
 
 
     
