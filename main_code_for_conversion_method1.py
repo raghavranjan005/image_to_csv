@@ -25,18 +25,18 @@ def graphtextdetextor(image_path):
     text=pytesseract.image_to_string(img,config=custom_config)
     text2=pytesseract.image_to_string(img,config=custom_config1)
     text3=pytesseract.image_to_string(img,config=custom_config2)
-
+    text4=pytesseract.image_to_string(img,config=custom_config_number)
 
 
     d=pytesseract.image_to_data(img,config=custom_config,output_type=Output.DICT)
 
     #print(text3)
-    return [text,text2,text3]
+    return [text,text2,text3,text4]
 
 
 
  
-image_path='final.jpeg'
+image_path='Capture1.PNG'
 d=graphtextdetextor(image_path) 
 print(d[1]) 
 
@@ -55,7 +55,7 @@ for i in d:
     break
 
 p=s.split()
-
+#print(count)
 Count1=0
 b=[]
 

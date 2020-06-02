@@ -15,6 +15,7 @@ imge = Image.open(img)
 data=pytesseract.image_to_boxes(imge)
 
 print(data)
+
 import re
 pdms=data.split()
 Sum=0

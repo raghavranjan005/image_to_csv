@@ -42,7 +42,7 @@ d=graphtextdetextor(image_path)
 
 
 #spilited the string text
-ss=d[1].split()
+ss=d[2].split()
 ww=[]
 for i in range(len(ss)):
     ww.append(ss[i])
